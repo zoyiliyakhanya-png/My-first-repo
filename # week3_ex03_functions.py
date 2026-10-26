@@ -1,38 +1,38 @@
-# week3_ex03_functions.py
-def greet(name):
-    return f"Hello, {name}!"
+# Question 1: Basic Function Definition and Calling
+# TODO: Define a function called 'greet' that prints "Hello, World!"
+def greet():
+    print("Hello, World!")
 
-def add(a, b):
-    return a + b
+# TODO: Call the 'greet' function
+greet()
 
-def subtract(a, b):
-    return a - b
+# Question 2: Function with Parameters
+# TODO: Define a function called 'personalized_greeting' that takes a name as a parameter and prints a personalized greeting
+def personalized_greeting(name):
+    print(f"Hello, {name}!")
 
-def multiply(a, b):
-    return a * b
+# TODO: Call the 'personalized_greeting' function with your name
+personalized_greeting("Zoyi")
 
-def divide(a, b):
-    if b == 0:
-        return "Cannot divide by zero"
-    return a / b
+# Question 3: Function with Return Value
+# TODO: Define a function called 'square' that takes a number as a parameter and returns its square
+def square(number):
+    return number * number
 
-def is_even(num):
-    return num % 2 == 0
+# TODO: Call the 'square' function with the number 5 and print the result
+print(square(5))
 
-def get_grade(score):
-    if score >= 90:
-        return "A"
-    elif score >= 80:
-        return "B"
-    elif score >= 70:
-        return "C"
-    elif score >= 60:
-        return "D"
-    else:
-        return "F"
+# Question 4: Function with Multiple Parameters and Return Value
+# TODO: Define a function called 'rectangle_area' that takes length and width as parameters and returns the area of the rectangle
+def rectangle_area(length, width):
+    return length * width
 
-print(greet("Zoyi"))
-print("5 + 3 =", add(5, 3))
-print("10 - 4 =", subtract(10, 4))
-print("Is 4 even?", is_even(4))
-print("Grade for 85:", get_grade(85))
+# TODO: Call the 'rectangle_area' function with length 4 and width 5, and print the result
+print(rectangle_area(4, 5))
+
+# Question 5: Using a Function as an Argument
+# TODO: Define a function called 'apply_operation' that takes a function and a number as parameters, and returns the result of applying the function to the number
+def apply_operation(func, number):
+    return func(number)
+
+print(apply_operation(square, 6))
